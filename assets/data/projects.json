@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "House Teardown",
+            "description1": "This project involved the complete demolition of a two-story residential home in Toronto, including foundation removal and site cleanup.",
+            "description2": "Our team efficiently managed debris disposal and ensured compliance with local regulations, completing the job ahead of schedule.",
+            "category": "Residential",
+            "location": "Toronto, ON",
+            "date": "January 15, 2024",
+            "client": "Private Homeowner",
+            "images": [
+                "assets/img/projects/residential-1.jpg"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Office Building Removal",
+            "description1": "A multi-story office building was demolished to make way for a new development in Mississauga, requiring careful structural dismantling.",
+            "description2": "We handled hazardous material abatement and recycled 80% of the materials, aligning with sustainability goals.",
+            "category": "Commercial",
+            "location": "Mississauga, ON",
+            "date": "March 22, 2024",
+            "client": "XYZ Developers",
+            "images": [
+                "assets/img/projects/commercial-1.jpg",
+                "assets/img/projects/commercial-2.jpg"
+            ]
+        }
+    ]
+}
