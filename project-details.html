@@ -106,10 +106,6 @@
             <div class="portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category:</strong> <span id="project-category">Loading...</span></li>
-                <li><strong>Location:</strong> <span id="project-location">Loading...</span></li>
-                <li><strong>Project Date:</strong> <span id="project-date">Loading...</span></li>
-                <li><strong>Client:</strong> <span id="project-client">Loading...</span></li>
               </ul>
             </div>
           </div>
@@ -202,42 +198,55 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Custom JS for Fetching Project Details -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Simulate fetching project ID from URL (e.g., ?id=1)
       const urlParams = new URLSearchParams(window.location.search);
-      const projectId = urlParams.get('id') || '1'; // Default to project 1 if no ID
-
+      const projectId = urlParams.get('id') || '1';
+  
       fetch('assets/data/projects.json')
         .then(response => response.json())
         .then(data => {
           const project = data.projects.find(p => p.id === projectId);
+  
           if (project) {
-            // Update page title (in the header section)
+            // Set titles and descriptions
             document.getElementById('page-title').textContent = project.title;
-
-            // Update section title and descriptions
             document.getElementById('project-title').textContent = project.title;
-            document.getElementById('project-description-1').textContent = project.description1;
-            document.getElementById('project-description-2').textContent = project.description2;
-
-            // Update project info
-            document.getElementById('project-category').textContent = project.category;
-            document.getElementById('project-location').textContent = project.location;
-            document.getElementById('project-date').textContent = project.date;
-            document.getElementById('project-client').textContent = project.client;
-
-            // Populate images in Swiper
+            document.getElementById('project-description-1').textContent = project.description1 || '';
+            document.getElementById('project-description-2').textContent = project.description2 || '';
+  
+            // Dynamically build the project info list
+            const infoContainer = document.querySelector('.portfolio-info ul');
+            if (infoContainer) {
+              infoContainer.innerHTML = ''; // wipe any static markup
+  
+              const fields = {
+                'Category': project.category,
+                'Location': project.location,
+                'Project Date': project.date,
+                'Client': project.client
+              };
+  
+              for (const [label, value] of Object.entries(fields)) {
+                if (value && value.trim() !== '') {
+                  const li = document.createElement('li');
+                  li.innerHTML = `<strong>${label}:</strong> <span>${value}</span>`;
+                  infoContainer.appendChild(li);
+                }
+              }
+            }
+  
+            // Render images
             const imageContainer = document.getElementById('project-images');
+            imageContainer.innerHTML = '';
             project.images.forEach(image => {
               const slide = document.createElement('div');
               slide.className = 'swiper-slide';
               slide.innerHTML = `<img src="${image}" alt="${project.title}">`;
               imageContainer.appendChild(slide);
             });
-
-            // Re-initialize Swiper after dynamic content is added
+  
+            // Init Swiper
             new Swiper('.portfolio-details-slider', JSON.parse(document.querySelector('.swiper-config').textContent));
           } else {
             document.getElementById('page-title').textContent = 'Project Not Found';
@@ -251,6 +260,7 @@
         });
     });
   </script>
+  
 
 </body>
 

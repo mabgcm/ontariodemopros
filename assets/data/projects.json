@@ -2,29 +2,180 @@
     "projects": [
         {
             "id": "1",
-            "title": "House Teardown",
-            "description1": "This project involved the complete demolition of a two-story residential home in Toronto, including foundation removal and site cleanup.",
-            "description2": "Our team efficiently managed debris disposal and ensured compliance with local regulations, completing the job ahead of schedule.",
+            "title": "Garage Demolition",
+            "description1": "Demolition of a detached garage including concrete slab removal and debris disposal.",
+            "description2": "The team ensured safe disconnection of utilities and fast site clearing within 2 days.",
             "category": "Residential",
-            "location": "Toronto, ON",
-            "date": "January 15, 2024",
-            "client": "Private Homeowner",
+            "location": "North York, ON",
+            "date": "2024",
+            "client": "Homeowner",
             "images": [
-                "assets/img/projects/residential-1.jpg"
+                "assets/img/projects/residential-1.jpg",
+                "assets/img/projects/residential-11.jpg"
             ]
         },
         {
             "id": "2",
-            "title": "Office Building Removal",
-            "description1": "A multi-story office building was demolished to make way for a new development in Mississauga, requiring careful structural dismantling.",
-            "description2": "We handled hazardous material abatement and recycled 80% of the materials, aligning with sustainability goals.",
+            "title": "Bank Vault Removal",
+            "description1": "Specialized structural removal of a reinforced bank vault within an occupied commercial building.",
+            "description2": "Heavy machinery and precision cutting tools were used to maintain safety during extraction.",
             "category": "Commercial",
-            "location": "Mississauga, ON",
-            "date": "March 22, 2024",
-            "client": "XYZ Developers",
+            "location": "Markham, ON",
+            "date": "2024",
+            "client": "Commercial Property Owner",
             "images": [
                 "assets/img/projects/commercial-1.jpg",
-                "assets/img/projects/commercial-2.jpg"
+                "assets/img/projects/commercial-11.jpg",
+                "assets/img/projects/commercial-12.jpg"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Complete House Demolition",
+            "description1": "Full demolition of a detached house including foundation removal and waste handling.",
+            "description2": "Work included permit coordination and safe deconstruction of load-bearing walls.",
+            "category": "Residential",
+            "location": "Richmond Hill, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-2.jpg",
+                "assets/img/projects/residential-21.jpg",
+                "assets/img/projects/residential-22.jpg",
+                "assets/img/projects/residential-23.jpg"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Mezzaanine Removal",
+            "description1": "Demolition and removal work carried out per scope and safety protocols.",
+            "description2": "Project was completed efficiently, with waste sorted and hauled away.",
+            "category": "Commercial",
+            "location": "Milton, ON",
+            "date": "2024",
+            "client": "Commercial Property Owner",
+            "images": [
+                "assets/img/projects/commercial-2.jpg",
+                "assets/img/projects/commercial-21.jpg",
+                "assets/img/projects/commercial-22.jpg",
+                "assets/img/projects/commercial-23.jpg"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Elevator Removal",
+            "description1": "Deconstruction and safe removal of outdated elevator systems in a multi-story facility.",
+            "description2": "Work included hoistway demolition, control panel extraction, and environmental compliance.",
+            "category": "Commercial",
+            "location": "Scarborough, ON",
+            "date": "2024",
+            "client": "Commercial Property Owner",
+            "images": [
+                "assets/img/projects/commercial-3.jpg",
+                "assets/img/projects/commercial-31.jpg",
+                "assets/img/projects/commercial-32.jpg",
+                "assets/img/projects/commercial-33.jpg"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Bathroom Removal",
+            "description1": "Interior demolition of outdated bathroom units for a renovation project.",
+            "description2": "Removal included tiles, drywall, and plumbing fixtures with dust control.",
+            "category": "Residential",
+            "location": "Milton, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-3.jpg",
+                "assets/img/projects/residential-31.jpg",
+                "assets/img/projects/residential-32.jpg"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Excavation",
+            "description1": "Excavation services for a new basement and utility trenching.",
+            "description2": "Work was completed on schedule with all spoil material responsibly hauled offsite.",
+            "category": "Residential",
+            "location": "Pickering, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-4.jpg"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Block and Concrete Partition",
+            "description1": "Removal of block and concrete partition walls within a commercial unit.",
+            "description2": "Clean demolition with minimal vibration to avoid disrupting neighboring units.",
+            "category": "Commercial",
+            "location": "Etobicoke, ON",
+            "date": "2024",
+            "client": "Commercial Property Owner",
+            "images": [
+                "assets/img/projects/commercial-4.jpg",
+                "assets/img/projects/commercial-41.jpg",
+                "assets/img/projects/commercial-42.jpg"
+            ]
+        },
+        {
+            "id": "9",
+            "title": "Interior Demolition",
+            "description1": "Interior strip-out of walls, ceilings, and flooring for remodeling.",
+            "description2": "Project completed dust-free with proper disposal of debris and salvageable material.",
+            "category": "Commercial",
+            "location": "Whitby, ON",
+            "date": "2024",
+            "client": "Commercial Property Owner",
+            "images": [
+                "assets/img/projects/commercial-5.jpg",
+                "assets/img/projects/commercial-51.jpg",
+                "assets/img/projects/commercial-52.jpg"
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Interior Demolition",
+            "description1": "Interior strip-out of walls, ceilings, and flooring for remodeling.",
+            "description2": "Project completed dust-free with proper disposal of debris and salvageable material.",
+            "category": "Residential",
+            "location": "Etobicoke, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-5.jpg",
+                "assets/img/projects/residential-51.jpg",
+                "assets/img/projects/residential-52.jpg"
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Basement Gutt",
+            "description1": "Gutting of a finished basement to prepare for full renovation.",
+            "description2": "All walls, flooring, and ceiling finishes removed while preserving structure.",
+            "category": "Residential",
+            "location": "Milton, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-6.jpg",
+                "assets/img/projects/residential-61.jpg",
+                "assets/img/projects/residential-62.jpg"
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Steps Removal",
+            "description1": "Demolition of concrete front steps as part of an exterior remodel.",
+            "description2": "Concrete was safely broken up and removed without disturbing nearby structures.",
+            "category": "Residential",
+            "location": "Vaughan, ON",
+            "date": "2024",
+            "client": "Homeowner",
+            "images": [
+                "assets/img/projects/residential-7.jpg"
             ]
         }
     ]

@@ -72,99 +72,22 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects section">
-
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
+    
+          <!-- Filters -->
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-residential">Residential</li>
             <li data-filter=".filter-commercial">Commercial</li>
-            <li data-filter=".filter-industrial">Industrial</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-residential">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/residential-1.jpg" class="img-fluid" alt="Residential Demolition Project">
-                <div class="portfolio-info">
-                  <h4>House Teardown</h4>
-                  <p>Toronto, ON - Full residential demolition</p>
-                  <a href="assets/img/projects/residential-1.jpg" title="House Teardown" data-gallery="portfolio-gallery-residential" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/commercial-1.jpg" class="img-fluid" alt="Commercial Demolition Project">
-                <div class="portfolio-info">
-                  <h4>Office Building Removal</h4>
-                  <p>Mississauga, ON - Commercial demolition</p>
-                  <a href="assets/img/projects/commercial-1.jpg" title="Office Building Removal" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-industrial">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/industrial-1.jpg" class="img-fluid" alt="Industrial Demolition Project">
-                <div class="portfolio-info">
-                  <h4>Warehouse Dismantling</h4>
-                  <p>Hamilton, ON - Industrial demolition</p>
-                  <a href="assets/img/projects/industrial-1.jpg" title="Warehouse Dismantling" data-gallery="portfolio-gallery-industrial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-residential">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/residential-2.jpg" class="img-fluid" alt="Residential Demolition Project">
-                <div class="portfolio-info">
-                  <h4>Cottage Demolition</h4>
-                  <p>Muskoka, ON - Cottage teardown</p>
-                  <a href="assets/img/projects/residential-2.jpg" title="Cottage Demolition" data-gallery="portfolio-gallery-residential" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/commercial-2.jpg" class="img-fluid" alt="Commercial Demolition Project">
-                <div class="portfolio-info">
-                  <h4>Retail Space Clearing</h4>
-                  <p>Oakville, ON - Commercial interior demo</p>
-                  <a href="assets/img/projects/commercial-2.jpg" title="Retail Space Clearing" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-industrial">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/industrial-2.jpg" class="img-fluid" alt="Industrial Demolition Project">
-                <div class="portfolio-info">
-                  <h4>Factory Teardown</h4>
-                  <p>Brampton, ON - Industrial demolition</p>
-                  <a href="assets/img/projects/industrial-2.jpg" title="Factory Teardown" data-gallery="portfolio-gallery-industrial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+          </ul>
+    
+          <!-- Project Cards Injected Here -->
+          <div class="row gy-4 isotope-container" id="project-list" data-aos="fade-up" data-aos-delay="200"></div>
+    
         </div>
-
       </div>
-
-    </section><!-- /Projects Section -->
+    </section>
 
   </main>
 
@@ -252,12 +175,64 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('assets/data/projects.json')
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById('project-list');
+          container.innerHTML = '';
+  
+          data.projects.forEach(project => {
+            const category = project.category?.trim().toLowerCase() || 'unknown';
+            const image = project.images?.[0] || 'assets/img/default.jpg';
+  
+            const card = document.createElement('div');
+            card.className = `col-lg-4 col-md-6 portfolio-item isotope-item filter-${category}`;
+            card.innerHTML = `
+              <div class="portfolio-content h-100">
+                <img src="${image}" class="img-fluid" alt="${project.title}">
+                <div class="portfolio-info">
+                  <h4>${project.title}</h4>
+                  <p>${project.location} - ${project.category}</p>
+                  <a href="${image}" title="${project.title}" data-gallery="portfolio-gallery-${category}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html?id=${project.id}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            `;
+            container.appendChild(card);
+          });
+  
+          // ✅ Critical: Initialize Isotope AFTER images are fully loaded
+          imagesLoaded(container, function () {
+            const iso = new Isotope('.isotope-container', {
+              itemSelector: '.portfolio-item',
+              layoutMode: 'masonry'
+            });
+  
+            // ✅ Trigger filtering
+            const filters = document.querySelectorAll('.portfolio-filters li');
+            filters.forEach(btn => {
+              btn.addEventListener('click', () => {
+                filters.forEach(el => el.classList.remove('filter-active'));
+                btn.classList.add('filter-active');
+                const filterValue = btn.getAttribute('data-filter');
+                iso.arrange({ filter: filterValue });
+              });
+            });
+          });
+        })
+        .catch(err => console.error('Failed to load projects:', err));
+    });
+  </script>
+  
+  
 </body>
 
 </html>
